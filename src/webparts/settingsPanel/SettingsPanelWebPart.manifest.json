@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "6a1c2988-8661-49ff-8c1c-944c15dadc1c",
+  "alias": "SettingsPanelWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "hiddenFromToolbox": true,
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart"],
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": { "default": "Other" },
+      "title": { "default": "SettingsPanel" },
+      "description": { "default": "Not a web part, a Teams Personal App tab" },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "description": "SettingsPanel"
+      }
+    }
+  ]
+}

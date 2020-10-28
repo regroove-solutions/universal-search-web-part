@@ -1,0 +1,41 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "7eb6e605-d96e-4b60-ba99-2fd9ee960881",
+  "alias": "RegrooveUniversalSearch",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart"],
+  "supportsThemeVariants": true,
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": { "default": "Other" },
+      "title": { "default": "Search" },
+      "description": { "default": "Universal Search Box Web Part" },
+      "officeFabricIconFontName": "Search",
+      "properties": {
+        "instanceId": "universal-search-web-part",
+        "boxWidth": 80,
+        "boxHeight": 32,
+        "newTab": true,
+        "customSearchName": "",
+        "customSearchUrl": "",
+        "borderWidth": 2,
+        "themeColour": "",
+        "searchTargetKeys": ["microsoft"],
+        "searchTargets": [
+          {
+            "key": "microsoft",
+            "text": "Microsoft 365",
+            "iconName": "WindowsLogo",
+            "baseUrl": "https://www.office.com/search?auth=2&q="
+          }
+        ],
+        "usePreference": true,
+        "showLogo": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+@import "../teams.module.scss";
+
+.themeBlack {
+  fill: "[theme: black, default: #000000]";
+}
+
+.navoPrimary {
+  fill: #169fe9;
+}

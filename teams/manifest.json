@@ -1,0 +1,64 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.7",
+  "packageName": "RegrooveUniversalSearch",
+  "id": "7eb6e605-d96e-4b60-ba99-2fd9ee960882",
+  "version": "1.5.5",
+  "developer": {
+    "name": "Regroove Solutions, Inc.",
+    "websiteUrl": "https://now.regroove.ca/collections/products/products/super-search",
+    "termsOfUseUrl": "https://www.microsoft.com/en-us/servicesagreement",
+    "privacyUrl": "https://privacy.microsoft.com/en-us/privacystatement",
+    "mpnId": "2413648"
+  },
+  "name": {
+    "short": "Search",
+    "full": "Universal Search"
+  },
+  "description": {
+    "short": "Universal Search",
+    "full": "Universal Search allows users to search across their entire Microsoft 365 profile, SharePoint Online, Google, Bing, and other search engines directly from SharePoint Online or Microsoft Teams so that users can find what they are looking for where they work!"
+  },
+  "icons": {
+    "outline": "7eb6e605-d96e-4b60-ba99-2fd9ee960881_outline.png",
+    "color": "7eb6e605-d96e-4b60-ba99-2fd9ee960881_color.png"
+  },
+  "accentColor": "#004578",
+  "staticTabs": [
+    {
+      "entityId": "com.personaltab.spfx.search",
+      "name": "Universal Search",
+      "contentUrl": "https://{teamSiteDomain}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=7eb6e605-d96e-4b60-ba99-2fd9ee960881%26forceLocale={locale}",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "com.personaltab.spfx.settings",
+      "name": "Settings",
+      "contentUrl": "https://{teamSiteDomain}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=6a1c2988-8661-49ff-8c1c-944c15dadc1c%26forceLocale={locale}",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=7eb6e605-d96e-4b60-ba99-2fd9ee960881%26forceLocale={locale}",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "validDomains": [
+    "*.login.microsoftonline.com",
+    "*.sharepoint.com",
+    "spoprod-a.akamaihd.net",
+    "resourceseng.blob.core.windows.net"
+  ],
+  "webApplicationInfo": {
+    "resource": "https://{teamSiteDomain}",
+    "id": "00000003-0000-0ff1-ce00-000000000000"
+  }
+}

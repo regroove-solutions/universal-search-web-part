@@ -1,0 +1,210 @@
+[data-theme] {
+  :global {
+    .ms-Dropdown-caretDown {
+      color: #323130 !important;
+    }
+    .ms-Dropdown-title,
+    .ms-TextField-field {
+      background-color: #fff;
+      color: #323130 !important;
+      border-color: #323130 !important;
+    }
+    .ms-Dropdown:hover {
+      background-color: initial;
+    }
+    .ms-TextField-fieldGroup,
+    .ms-TextField-fieldGroup:hover {
+      border-color: initial;
+    }
+    .ms-Spinner-circle {
+      border-color: #c8c6c4 #464775 #464775;
+    }
+  }
+  button.submit {
+    color: #fff;
+    &:active {
+      background-color: #33344a;
+    }
+  }
+}
+
+[data-theme="default"] {
+  :global {
+    .ms-Fabric {
+      color: #333;
+    }
+    label {
+      color: #323130 !important;
+    }
+    .ms-ContextualMenu {
+      background-color: red;
+    }
+    .ms-Slider-inactive {
+      background-color: #c8c6c4;
+    }
+    .ms-Slider-active {
+      background-color: #605e5c;
+    }
+    .ms-Slider-thumb {
+      border-color: #605e5c;
+      background-color: #fff;
+    }
+    .ms-Slider-slideBox:hover,
+    .ms-Slider-slideBox:active {
+      .ms-Slider-inactive {
+        background-color: #deecf9;
+      }
+      .ms-Slider-active {
+        background-color: #0078d4;
+      }
+      .ms-Slider-thumb {
+        border-color: #0078d4;
+      }
+    }
+    button.ms-Toggle-background[aria-checked="true"] {
+      background-color: #464775;
+      .ms-Toggle-thumb {
+        background-color: #fff;
+      }
+    }
+    button.ms-Toggle-background[aria-checked="false"] {
+      background-color: #fff;
+      border-color: #605e5c;
+      .ms-Toggle-thumb {
+        background-color: #000;
+      }
+    }
+  }
+  svg .themeBlack {
+    fill: #000;
+  }
+  .searchWebPart .poweredBy > div {
+    color: #000;
+  }
+  .universalSearch {
+    .searchBox {
+      background-color: #f3f2f1 !important;
+      input {
+        color: #000;
+        &::placeholder {
+          color: #605e5c;
+        }
+      }
+    }
+    .targetButton i {
+      color: #fff;
+    }
+    .targetButton svg {
+      fill: #fff !important;
+    }
+    :global .ms-SearchBox-clearButton i {
+      color: #000;
+    }
+  }
+}
+
+[data-theme="dark"] {
+  :global {
+    .ms-Fabric {
+      color: #fff !important;
+    }
+    .ms-Label,
+    .ms-TextField-description {
+      color: #ddd;
+    }
+    .ms-Slider-inactive {
+      background-color: #ccc;
+    }
+    .ms-Slider-active {
+      background-color: #999;
+    }
+    .ms-Slider-slideBox:hover {
+      .ms-Slider-inactive {
+        background-color: #ccc;
+      }
+      .ms-Slider-active {
+        background-color: #888;
+      }
+      .ms-Slider-thumb {
+        border-color: #888;
+      }
+    }
+    button.ms-Toggle-background[aria-checked="true"] {
+      background-color: #999;
+    }
+  }
+  .spinnerContainer {
+    background-color: rgba(32, 31, 31, 0.5);
+  }
+  svg .themeBlack {
+    fill: #fff;
+  }
+  .universalSearch {
+    .searchBox {
+      background-color: #313131 !important;
+      input {
+        color: #fff;
+      }
+    }
+    .targetButton i {
+      color: #313131;
+    }
+    .targetButton svg {
+      fill: #313131 !important;
+    }
+    :global .ms-SearchBox-clearButton i {
+      color: #fff;
+    }
+  }
+}
+
+[data-theme="contrast"] {
+  :global {
+    .ms-Fabric {
+      color: #ff0 !important;
+    }
+    .ms-Label,
+    .ms-TextField-description {
+      color: #ddd;
+    }
+    .ms-Slider-active {
+      background-color: #cc0;
+    }
+    .ms-Slider-slideBox:hover {
+      .ms-Slider-active {
+        background-color: #a80;
+      }
+      .ms-Slider-inactive {
+        background-color: #c8c6c4;
+      }
+      .ms-Slider-thumb {
+        border-color: #a80;
+      }
+    }
+    button.ms-Toggle-background[aria-checked="true"] {
+      background-color: #cc0;
+    }
+  }
+  button.submit {
+    background-color: #fff;
+    color: #000;
+    &:hover,
+    &:focus {
+      background-color: #bbb;
+    }
+    &:active {
+      background-color: #999;
+    }
+  }
+  .spinnerContainer {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  svg .themeBlack {
+    fill: #fff;
+  }
+  .universalSearch {
+    :global .ms-SearchBox-clearButton i {
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+@import "../../../shared/teams.module.scss";
+
+.searchWebPart {
+  margin: 0px auto;
+  max-width: 100%;
+  min-width: 180px;
+
+  .universalSearch {
+    max-width: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 4px;
+    background-color: "[theme: themePrimary, default: #a4262c]";
+
+    .searchBox {
+      width: 100%;
+      height: 100%;
+      border-width: 0px;
+      border-radius: 3px 0px 0px 3px;
+      background-color: "[theme: neutralLighter, default: #f4f4f4]";
+      overflow: hidden;
+
+      &:hover,
+      &:focus-within {
+        background-color: "[theme: neutralLighterAlt, default: #f8f8f8]";
+      }
+
+      input:-webkit-autofill,
+      input:-internal-autofill-selected {
+        box-shadow: 0 0 0 30px "[theme: neutralLighterAlt, default: #f8f8f8]"
+          inset;
+      }
+    }
+
+    :global .ms-Button-label {
+      font-weight: 200;
+    }
+
+    :global .ms-Button--primary {
+      border-radius: 0px 3px 3px 0px;
+      padding: 0px;
+      height: 100%;
+      border: 0px;
+
+      &:local(.targetButton) {
+        padding: 0px 10px;
+      }
+
+      i {
+        &[data-icon-name="DuckDuckGoLogo"] g {
+          transform: scale(0.1, -0.1) translate(0px, -2900px);
+        }
+        &[data-icon-name="GoogleLogo"] g {
+          transform: translate(0px, 40px);
+        }
+      }
+
+      svg {
+        fill: "[theme: white, default: #f4f4f4]";
+        transform: translate(0px, -10%);
+      }
+    }
+  }
+
+  .poweredBy {
+    display: flex;
+    flex-direction: row;
+    > div {
+      color: "[theme: black, default: #000000]";
+    }
+    a {
+      width: 56px;
+      padding: 3px 0px 0px 6px;
+    }
+  }
+}
+
+:global .ControlZone--emphasisBackground {
+  background-color: transparent;
+}
+
+.searchDropdown {
+  border: none;
+
+  :global .ms-ContextualMenu {
+    background-color: #fff;
+
+    button {
+      color: #000;
+      &:hover {
+        background-color: #f3f2f1;
+      }
+    }
+    .ms-ContextualMenu-icon {
+      fill: "[theme: themePrimary, default: #a4262c]";
+    }
+  }
+}
+
+//override for PropertyFieldMultiSelect font contrast
+:global button.ms-ColumnManagementPanel-checkbox {
+  color: "[theme: neutralPrimary, default: #333333]";
+}
+
+.teamsContainer {
+  display: flex;
+  height: 90%;
+  align-items: center;
+}

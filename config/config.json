@@ -1,0 +1,28 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "universal-search-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/universalSearch/UniversalSearchWebPart.js",
+          "manifest": "./src/webparts/universalSearch/UniversalSearchWebPart.manifest.json"
+        }
+      ]
+    },
+    "settings-panel-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/settingsPanel/SettingsPanelWebPart.js",
+          "manifest": "./src/webparts/settingsPanel/SettingsPanelWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "UniversalSearchWebPartStrings": "lib/webparts/universalSearch/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js",
+    "SettingsPanelWebPartStrings": "lib/webparts/settingsPanel/loc/{locale}.js"
+  }
+}

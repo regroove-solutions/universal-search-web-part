@@ -1,0 +1,117 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+@import "../../../shared/teams.module.scss";
+
+.settingsPanel {
+  display: flex;
+
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+    width: 100%;
+
+    > div {
+      margin: 0px auto;
+    }
+  }
+
+  > div {
+    flex: 50%;
+    padding: 20px;
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .fabricText {
+    font-weight: bold;
+    display: block;
+    margin: 20px 0px;
+  }
+
+  .toggle button[aria-checked="true"] {
+    background-color: #464775;
+  }
+
+  .reorder {
+    list-style: none;
+    padding-left: 0px;
+
+    li {
+      background-color: #fff;
+      border: 1px solid #bbb;
+      padding: 4px 8px;
+      font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI",
+        -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+      font-size: smaller;
+    }
+
+    button {
+      float: right;
+      height: unset;
+
+      i {
+        color: #000;
+      }
+
+      &:hover i {
+        color: #605e5c;
+      }
+    }
+  }
+}
+
+.dropdown {
+  :global {
+    .ms-Checkbox {
+      color: #000;
+      background-color: #fff;
+      &.is-checked {
+        background-color: #e1dfdd;
+        .ms-Checkbox-checkbox,
+        .ms-Checkbox-checkbox:hover {
+          background-color: #464775;
+          border-color: #464775;
+          color: #fff;
+          .ms-Checkbox-checkmark {
+            color: #fff;
+          }
+        }
+      }
+      .ms-Checkbox-checkbox {
+        border-color: initial;
+      }
+      .ms-Checkbox-checkbox:hover {
+        border-color: initial;
+        .ms-Checkbox-checkmark {
+          color: #605e5c;
+        }
+      }
+    }
+  }
+}
+
+.preview {
+  margin: 20px auto;
+  height: 80px;
+}
+
+.submit {
+  margin: 32px auto;
+  display: block;
+  background-color: #464775;
+
+  &:hover:not(:active) {
+    background-color: #464775;
+  }
+}
+
+.spinnerContainer {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 4;
+  background-color: rgba(243, 242, 241, 0.5);
+
+  > div {
+    height: 100%;
+    margin: auto;
+  }
+}

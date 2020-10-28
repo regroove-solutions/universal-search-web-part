@@ -1,0 +1,32 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "Universal Search",
+    "id": "a58aaa33-5121-4f1e-add9-050e65f91b4f",
+    "version": "1.5.5.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "Regroove Solutions, Inc.",
+      "websiteUrl": "https://now.regroove.ca/collections/products/products/super-search",
+      "termsOfUseUrl": "https://www.microsoft.com/en-us/servicesagreement",
+      "privacyUrl": "https://privacy.microsoft.com/en-us/privacystatement",
+      "mpnId": "2413648"
+    },
+    "iconPath": "icon.png",
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Sites.Manage.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Files.Read"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/universal-search.sppkg"
+  }
+}

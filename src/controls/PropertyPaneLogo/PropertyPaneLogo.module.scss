@@ -1,0 +1,16 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+
+.svgBox {
+  width: 50%;
+  margin: 0px auto;
+  margin-bottom: 48px;
+  padding-top: 8px;
+  display: block;
+}
+
+.propertyPaneLogo {
+  position: fixed;
+  bottom: 20px;
+  width: 300px;
+  background-color: "[theme: white, default: #ffffff]";
+}
